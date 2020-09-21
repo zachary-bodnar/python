@@ -1,0 +1,25 @@
+
+#Lebron James: Statistics for 2003/2004 - 2012/2013
+games_played = [79, 80, 79, 78, 75, 81, 76, 79, 62, 76]
+points = [1654, 2175, 2478, 2132, 2250, 2304, 2258, 2111, 1683, 2036]
+assists = [460, 636, 814, 701, 771, 762, 773, 663, 502, 535]
+rebounds = [432, 588, 556, 526, 592, 613, 554, 590, 492, 610]
+years = ['03/04', '04/05', '05/06', '06/07', '07/08', '08/09', '09/10', '10/11', '11/12', '12/13']
+# Print total points
+total_points = sum(points)
+print('The total career points are:', total_points)
+# Print Average PPG
+avg_PPG = total_points / sum(games_played)
+print('The avg PPG over that span is: %.1f' % avg_PPG)
+# Print best scoring year
+best_year = max(points)
+byr = points.index(best_year)
+byear = years[byr]
+print('The best scoring year was:', best_year)
+print('that year was', byear)
+# Print worst scoring year
+worst_year = min(points)
+wyr = points.index(worst_year)
+wyear = years[wyr]
+print('The worst scoring year was:', worst_year)
+print('that year was', wyear)
